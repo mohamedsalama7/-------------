@@ -1,0 +1,37 @@
+footer {
+  background: var(--body-font);
+  color: var(--body-background);
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container p {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+footer .container p span {
+  color: #d10e32;
+  font-size: 20px;
+}
+
+
+footer .container i {
+  background: var(--body-background);
+  color: var(--body-font);
+  font-size: 30px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+footer .container i:hover {
+  background: var(--body-font);
+  color: var(--body-background);
+  transition: .3s;
+}

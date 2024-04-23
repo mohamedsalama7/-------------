@@ -1,0 +1,118 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+header.fixed-header {
+  position: fixed;
+  transition: .5s;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background: var(--body-font);
+  color: var(--body-background);
+  z-index: 30;
+}
+
+header .logo div:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+header .logo span {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+header .logo i {
+  font-size: 35px;
+  color: rgb(47, 46, 46);
+}
+
+header .login a {
+  display: inline-block;
+  border: 1px solid var(--body-font);
+  width: 130px;
+  display: inline-flex;
+  
+  align-items: center;
+  padding: 6px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: var(--body-font);
+}
+
+header .login a:hover {
+  scale: .9;
+  transition: .4s;
+}
+
+header .login a:hover:not(:first-child) {
+  background: var(--body-font);
+  color: var(--body-background);
+}
+
+.fixed-header .login a {
+  background: var(--body-background);
+  color: var(--body-font);
+}
+
+
+header .login a:hover:nth-child(1) {
+  background: var(--body-background);
+  color: var(--body-font);
+}
+header .login a:nth-child(1) {
+  position: relative;
+  background: var(--body-font);
+  color: var(--body-background);
+}
+
+
+header .login a:nth-child(1) span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  background: rgb(192, 58, 58);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+@media (min-width: 0) and (max-width: 768px){
+  header {
+    justify-content: center;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+
+
+  header .logo {
+    display: none;
+  }
+  
+}

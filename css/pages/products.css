@@ -1,0 +1,143 @@
+
+.product__category, .product__price, .btn {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+
+.container.two h2 {
+  display: block;
+  margin: 30px auto ;
+  font-size: 30px;
+}
+
+.products .product img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.products .product {
+  margin: auto;
+}
+
+.products {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+@media (min-width: 0) and (max-width: 768px){
+  .products {
+      grid-template-columns: repeat(1,1fr);
+  }
+}
+/* Medium */
+@media (min-width: 768px) and (max-width: 992px){
+  .products {
+    grid-template-columns: repeat(1,1fr);
+}
+}
+/* Large */
+@media (min-width: 992px) and (max-width: 1500px){
+  .products {
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #cf092c;
+  margin: 22px 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.products p {
+  margin: 0 0 1.5em 0;
+}
+.products p:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 1.75em 3.5em;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.product {
+  position: relative;
+  width: 400px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 30px 25px -20px rgba(0, 0, 0, 0.15);
+}
+
+.product__image {
+  width: 120%;
+  max-width: none;
+}
+
+.product__title {
+  font-size: 30px;
+  color: #000;
+  margin: 0 0 0.5em 0;
+  line-height: 1.1;
+}
+
+.product__price {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -30px;
+  left: -10px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.product__category {
+  display: block;
+  color: #cf092c;
+  margin-bottom: 1em;
+}
+
+.product__btn {
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  background-color: rgba(207, 9, 44, 0.95);
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 30px 25px -20px rgba(0, 0, 0, 0.15);
+}
+.product__btn:hover {
+  box-shadow: 0 36px 28px -20px rgba(0, 0, 0, 0.2);
+  background-color: #c5092a;
+}
+
+.products .product {
+  border: 1px solid #ddd;
+  backdrop-filter: blur(30px);
+}
+
+.products .product:hover {
+  scale: .93;
+  transition: .4s;
+}
